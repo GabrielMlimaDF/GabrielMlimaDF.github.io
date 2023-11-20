@@ -1,0 +1,40 @@
+.introducao {
+
+  align-items: center;
+}
+
+.introducao-conteudo h1 {
+  font-size: 4.5rem;
+  line-height: 1.125;
+  margin-bottom: 30px;
+}
+.introducao-conteudo span {
+  color: #70da1c;
+}
+.introducao-conteudo p {
+  font-size: 1.5rem;
+  color: #525252;
+}
+
+@media (max-width: 900px) {
+  .introducao {
+    grid-template-columns: 1fr auto;
+    gap: 20px;
+  }
+  .introducao-conteudo h1 {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 520px) {
+  .introducao img {
+    display: none;
+    grid-template-columns: 1fr;
+  }
+  
+  .introducao-conteudo h1 {
+    text-align: center;
+  }
+  .introducao-conteudo p {
+    text-align: center;
+  }
+}
